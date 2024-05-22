@@ -1,21 +1,29 @@
-import { Component } from "react";
-import styled from 'styled-components'
+import { Component } from "react"
 
-import Links from "../links/links";
+import './navbar.scss';
 
 export default class Navbar extends Component{
-
-  Nav = styled.nav`
-    width: 100px;
-    height: 100px;
-    background-color: #eee;
-  `;
-
+  constructor(props){
+    super(props);
+   
+    this.state = {}
+  }
+  
   render(){
+    const location = this.props.location;
+    const linksData = this.props.links;
     return (
-      <this.Nav>
-        <Links/>
-      </this.Nav>
+      <nav className={"nav" + (location === "top" ? " nav_top" : " nav_bottom")}>
+        <ul className="nav_links">
+          {linksData.map(({id, text, link}) => {
+            return (
+              <li className="nav_links_item" key={id}>
+                <a className="nav_links_item_link" href={link}>{text}</a>
+              </li>
+            )
+          })}
+        </ul>
+      </nav>
     );
   }
 }

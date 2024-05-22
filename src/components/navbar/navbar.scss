@@ -1,0 +1,27 @@
+.nav{
+  width: 33%;
+  &_top{
+    padding-top: 30px;
+    .nav_links_item_link{
+      color: #fff;
+    }    
+  }
+  &_bottom{
+    .nav_links_item_link{
+      color: #000;
+    } 
+  }
+  &_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style-type: none;
+    &_item{
+      &_link{
+        font-size: 12px;
+        font-weight: 300;
+        text-decoration: none;
+      }
+    }
+  }
+}
