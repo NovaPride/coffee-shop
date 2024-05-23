@@ -18,7 +18,7 @@ export default class Header extends Component{
         <div className="container">
           <Navbar location="top" links={linksData}/>
           <div className="header_info">
-            <h1 className="header_info_maintext">Everything You Love About Coffee</h1>
+            <h1 className="header_info_heading">Everything You Love About Coffee</h1>
             <BeanSepator theme="white"/>
             <p className="header_info_descr">
               We makes every day full of energy and taste <br/>

@@ -1,5 +1,6 @@
 import { Component } from "react"
 import Header from "../header/header";
+import AboutUs from "../about-us-main/about-us-main";
 
 import './app.scss';
 
@@ -13,7 +14,10 @@ export default class App extends Component{
 
   render(){
     return (
-      <Header links={linksData}/>
+      <>
+        <Header links={linksData}/>
+        <AboutUs/>
+      </>
     );
   }
 }
