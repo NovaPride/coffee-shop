@@ -1,18 +1,18 @@
 import { Component } from "react"
 
-import './header.scss';
+import "./header.scss";
 
 import Navbar from "../navbar/navbar";
 import BeanSepator from "../bean-separator/bean-separator";
 
 
-export default class Header extends Component{
-  constructor(props){
+export default class Header extends Component {
+  constructor(props) {
     super(props);
     this.state = {}
   }
   
-  render(){
+  render() {
     const linksData = this.props.links;
     return (
       <header className="header">

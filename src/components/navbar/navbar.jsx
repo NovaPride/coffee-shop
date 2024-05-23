@@ -1,15 +1,15 @@
 import { Component } from "react"
 
-import './navbar.scss';
+import "./navbar.scss";
 
-export default class Navbar extends Component{
-  constructor(props){
+export default class Navbar extends Component {
+  constructor(props) {
     super(props);
    
     this.state = {}
   }
   
-  render(){
+  render() {
     const location = this.props.location;
     const linksData = this.props.links;
     return (

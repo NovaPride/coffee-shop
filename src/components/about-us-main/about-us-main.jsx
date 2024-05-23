@@ -1,22 +1,22 @@
 import { Component } from "react";
 
-import './about-us-main.scss';
+import "./about-us-main.scss";
 
 import BeanSepator from "../bean-separator/bean-separator";
 
 
-export default class AboutUs extends Component{
-  // constructor(props){
+export default class AboutUs extends Component {
+  // constructor(props) {
   //   super(props)
   // }
-  render(){
+  render() {
     return (
-      <section className="about_us">
+      <section className="about-us">
         <div className="container">
-          <div className="about_us_wrapper">
-            <h2 className="about_us_wrapper_heading">About Us</h2>
+          <div className="about-us_wrapper">
+            <h2 className="about-us_wrapper_heading">About Us</h2>
             <BeanSepator theme="black"/>
-            <div className="about_us_wrapper_maintext">
+            <div className="about-us_wrapper_maintext">
               Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
               Afraid at highly months do things on at. Situation recommend objection do intention
               so questions. As greatly removed calling pleased improve an. Last ask him cold feel

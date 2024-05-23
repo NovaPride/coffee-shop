@@ -1,0 +1,12 @@
+.our-best{
+  background: url(../../resources/img/stone-bg.webp) center (center/cover) no-repeat;
+  padding: 80px 0 110px 0;
+  min-height: 305px;
+  &_wrapper{
+    &_heading{ 
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+}
