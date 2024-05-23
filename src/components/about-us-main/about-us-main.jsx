@@ -1,8 +1,9 @@
 import { Component } from "react";
 
+import './about-us-main.scss';
+
 import BeanSepator from "../bean-separator/bean-separator";
 
-import './about-us-main.scss';
 
 export default class AboutUs extends Component{
   // constructor(props){

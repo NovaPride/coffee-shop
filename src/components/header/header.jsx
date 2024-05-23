@@ -1,8 +1,9 @@
 import { Component } from "react"
-import Navbar from "../navbar/navbar";
-import BeanSepator from "../bean-separator/bean-separator";
 
 import './header.scss';
+
+import Navbar from "../navbar/navbar";
+import BeanSepator from "../bean-separator/bean-separator";
 
 
 export default class Header extends Component{
