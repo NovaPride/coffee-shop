@@ -12,10 +12,14 @@
     &_maintext{
       font-size: 40px;
       font-weight: 700;
+      margin: 10px 0;
     }
     &_descr{
+      line-height: 45px;
+      text-align: center;
       font-size: 24px;
       font-weight: 700;
+      margin: 15px 0;
     }
     hr{
       display: block;

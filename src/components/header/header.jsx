@@ -1,7 +1,9 @@
 import { Component } from "react"
 import Navbar from "../navbar/navbar";
+import BeanSepator from "../bean-separator/bean-separator";
 
 import './header.scss';
+
 
 export default class Header extends Component{
   constructor(props){
@@ -17,7 +19,7 @@ export default class Header extends Component{
           <Navbar location="top" links={linksData}/>
           <div className="header_info">
             <h1 className="header_info_maintext">Everything You Love About Coffee</h1>
-            <hr/>
+            <BeanSepator theme="white"/>
             <p className="header_info_descr">
               We makes every day full of energy and taste <br/>
               Want to try our beans?
