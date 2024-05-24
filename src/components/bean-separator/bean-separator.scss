@@ -2,7 +2,7 @@
   width: 30px;
   height: 30px;
   position: relative;
-  
+
   &::before{
     content: '';
     width: 60px;
@@ -11,6 +11,7 @@
     top: 50%;
     z-index: 1;
   }
+
   &::after{
     content: '';
     width: 60px;
@@ -24,15 +25,17 @@
     &::before{
       border-bottom: solid 1px #fff;
     }
+
     &::after{
       border-bottom: solid 1px #fff;
     }
   }
-
+  
   &_black{
     &::before{
       border-bottom: solid 1px #000;
     }
+
     &::after{
       border-bottom: solid 1px #000;
     }

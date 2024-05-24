@@ -1,14 +1,17 @@
 .about-us{
   height: 340px;
   padding: 80px 0 100px 0;
+
   &_wrapper{
     display: flex;
     align-items: center;
     flex-direction: column;
+
     &_heading{
       margin-top: 0;
       font-size: 24px;
     }
+
     &_maintext{
       font-size: 14px;
       margin-top: 40px;
@@ -16,5 +19,4 @@
       width: 590px;
     }
   }
-  
 }

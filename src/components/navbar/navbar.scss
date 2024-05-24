@@ -1,7 +1,9 @@
 .nav{
   width: 33%;
+
   &_top{
     padding-top: 30px;
+
     .nav_links_item{
       &:first-child {
         &::before{
@@ -9,12 +11,15 @@
         }
       }
     }
+
     .nav_links_item_link{
       color: #fff;
     }    
   }
+
   &_bottom{
     margin-bottom: 30px;
+
     .nav_links_item{
       &:first-child {
         &::before{
@@ -22,17 +27,21 @@
         }
       }
     }
+
     .nav_links_item_link{
       color: #000;
     } 
   }
+
   &_links{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     list-style-type: none;
+
     &_item{
       position: relative;
+
       &:first-child {
         &::before{
           content: '';
@@ -42,9 +51,9 @@
           height: 35px;
           top: -16px;
           left: -30px;
-          
         }
       }
+      
       &_link{
         font-size: 12px;
         font-weight: 300;
