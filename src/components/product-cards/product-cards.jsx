@@ -17,7 +17,7 @@ export default class ProductCards extends Component{
         {
           mainCardsData.map(({id, text, price, imgSrc}) => {
             return (
-              <div className="product-cards_grid_elem" key={id} >
+              <div className="product-cards_grid_elem" tabIndex="0" key={id} onClick={()=>{console.log("Clicked!!")}}>
                 <div className="product-cards_grid_elem_wrapper">
                   <img className="product-cards_grid_elem_img" src={imgSrc} alt={text} />
                   <p className="product-cards_grid_elem_text">{text}</p>
