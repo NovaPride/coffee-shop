@@ -3,6 +3,7 @@ import { Component } from "react";
 import Header from "../../components/header/header";
 import Article from "../../components/article/article";
 import Separator from "../../components/separator/separator";
+import ProductCardsFilter from "../../components/product-cards-filter/product-cards-filter";
 import ProductCards from "../../components/product-cards/product-cards";
 import Footer from "../../components/footer/footer";
 
@@ -30,6 +31,7 @@ export default class OurCoffee extends Component {
         <Header links={linksData}/>
         <Article text={articleText} src={aboutImg} alt={altText}/>
         <Separator/>
+        <ProductCardsFilter/>
         <ProductCards cards={ourCoffeeCardsData} shadow={true}/>
         <Footer links={linksData}/>
       </>

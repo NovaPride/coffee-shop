@@ -10,6 +10,12 @@ code {
     monospace;
 }
 
+input{
+  &::placeholder{
+    font-family: "Merienda", sans-serif;
+  }
+}
+
 button {
   font-family: "Merienda", sans-serif;
   color: #fff;

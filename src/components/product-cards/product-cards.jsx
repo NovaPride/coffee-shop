@@ -19,12 +19,13 @@ export default class ProductCards extends Component{
     return (
       <div className="product-cards_grid">
         {
-          cardsData.map(({id, text, price, imgSrc}) => {
+          cardsData.map(({id, text, price, country, imgSrc}) => {
             return (
               <div className={gridElemStyle} tabIndex="0" key={id} onClick={()=>{console.log("Clicked!!")}}>
                 <div className="product-cards_grid_elem_wrapper">
                   <img className="product-cards_grid_elem_img" src={imgSrc} alt={text} />
                   <p className="product-cards_grid_elem_text">{text}</p>
+                  {country ? <p className="product-cards_grid_elem_country">{country}</p> : ""}
                   <p className="product-cards_grid_elem_price">{price + "$"}</p>
                 </div>         
               </div>

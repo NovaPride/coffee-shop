@@ -18,7 +18,7 @@ export default class App extends Component {
     return (<>{{
       "main" : <MainPage links={linksData} cards={mainCardsData}/>,
       "ourcoffee" : <OurCoffee links={linksData} cards={ourCoffeeCardsData}/>,
-      }["ourcoffee"]
+      }["main"]
       
     }</>);
   }
