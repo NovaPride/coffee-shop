@@ -2,6 +2,8 @@ import { Component } from "react";
 
 import Header from "../../components/header/header";
 import Article from "../../components/article/article";
+import Separator from "../../components/separator/separator";
+import ProductCards from "../../components/product-cards/product-cards";
 import Footer from "../../components/footer/footer";
 
 import { aboutImg } from "../../resources/imgFiles";
@@ -10,8 +12,9 @@ import { aboutImg } from "../../resources/imgFiles";
 export default class OurCoffee extends Component {
   render() {
     const linksData = this.props.links;
-    // const mainCardsData = this.props.cards;
+    const ourCoffeeCardsData = this.props.cards;
 
+    const altText = "women drinks coffee";
     const articleText = <>
       Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
       <br/><br/>
@@ -25,7 +28,9 @@ export default class OurCoffee extends Component {
     return (
       <>
         <Header links={linksData}/>
-        <Article text={articleText} src={aboutImg} alt="women drinks coffee"/>
+        <Article text={articleText} src={aboutImg} alt={altText}/>
+        <Separator/>
+        <ProductCards cards={ourCoffeeCardsData} shadow={true}/>
         <Footer links={linksData}/>
       </>
     );

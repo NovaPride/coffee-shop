@@ -13,3 +13,12 @@ export const mainCardsData = [
   {id: 2, text: "Presto Coffee Beans 1 kg", price: 15.99, imgSrc: coffee2Img},
   {id: 3, text: "AROMISTICO Coffee 1 kg", price: 6.99, imgSrc: coffee1Img},
 ]
+
+export const ourCoffeeCardsData = [
+  {id: 1, text: "AROMISTICO Coffee 1 kg", price: 6.99, imgSrc: coffee1Img},
+  {id: 2, text: "AROMISTICO Coffee 1 kg", price: 6.99, imgSrc: coffee1Img},
+  {id: 3, text: "AROMISTICO Coffee 1 kg", price: 6.99, imgSrc: coffee1Img},
+  {id: 4, text: "AROMISTICO Coffee 1 kg", price: 6.99, imgSrc: coffee1Img},
+  {id: 5, text: "AROMISTICO Coffee 1 kg", price: 6.99, imgSrc: coffee1Img},
+  {id: 6, text: "AROMISTICO Coffee 1 kg", price: 6.99, imgSrc: coffee1Img},
+]

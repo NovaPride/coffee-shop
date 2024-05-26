@@ -5,7 +5,7 @@ import "./app.scss";
 import MainPage from "../../pages/main-page/main-page";
 import OurCoffee from "../../pages/our-coffee-page/our-coffee-page";
 
-import { linksData, mainCardsData } from "../../resources/data/data";
+import { linksData, mainCardsData, ourCoffeeCardsData } from "../../resources/data/data";
 
 
 export default class App extends Component {
@@ -17,7 +17,7 @@ export default class App extends Component {
   render() {
     return (<>{{
       "main" : <MainPage links={linksData} cards={mainCardsData}/>,
-      "ourcoffee" : <OurCoffee links={linksData} cards={mainCardsData}/>,
+      "ourcoffee" : <OurCoffee links={linksData} cards={ourCoffeeCardsData}/>,
       }["ourcoffee"]
       
     }</>);

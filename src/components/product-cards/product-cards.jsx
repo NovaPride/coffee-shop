@@ -11,13 +11,17 @@ export default class ProductCards extends Component{
   }
 
   render() {
-    const mainCardsData = this.props.cards;
+    const cardsData = this.props.cards;
+    const isShadow = this.props.shadow;
+
+    const gridElemStyle = isShadow ? "product-cards_grid_elem product-cards_grid_elem_shadow" : "product-cards_grid_elem";
+
     return (
       <div className="product-cards_grid">
         {
-          mainCardsData.map(({id, text, price, imgSrc}) => {
+          cardsData.map(({id, text, price, imgSrc}) => {
             return (
-              <div className="product-cards_grid_elem" tabIndex="0" key={id} onClick={()=>{console.log("Clicked!!")}}>
+              <div className={gridElemStyle} tabIndex="0" key={id} onClick={()=>{console.log("Clicked!!")}}>
                 <div className="product-cards_grid_elem_wrapper">
                   <img className="product-cards_grid_elem_img" src={imgSrc} alt={text} />
                   <p className="product-cards_grid_elem_text">{text}</p>
