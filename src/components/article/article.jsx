@@ -14,7 +14,9 @@ export default class Article extends Component {
   render() {
     const imgSrc = this.props.src;
     const imgAlt = this.props.alt;
+    const heading = this.props.heading;
     const articleText = this.props.text;
+    const articleTextWidth = this.props.textWidth;
 
     return (
       <article className="article">
@@ -25,14 +27,14 @@ export default class Article extends Component {
                 <img src={imgSrc} alt={imgAlt} />
               </div>
               <div className="article_item">
-                <h2 className="article_item_heading">About Us</h2>
+                <h2 className="article_item_heading">{heading}</h2>
                 <BeanSepator theme="black"/>
-                <div className="article_item_maintext">{articleText}</div>
+                <div className="article_item_maintext" style={{width : articleTextWidth}}>{articleText}</div>
               </div>
             </div>
           </> : <>
             <div className="article_item">
-              <h2 className="article_item_heading">About Us</h2>
+              <h2 className="article_item_heading">{heading}</h2>
               <BeanSepator theme="black"/>
               <div className="article_item_maintext">{articleText}</div>
             </div>

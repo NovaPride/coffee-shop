@@ -25,6 +25,9 @@ export default class MainPage extends Component {
       recommend. Did even but nor are most gave hope. Secure active living depend son
       repair day ladies now.
     </>;
+    const articleHeading = <>
+      About Us
+    </>;
     const headingText = <>
       Everything You Love About Coffee
     </>;
@@ -36,7 +39,7 @@ export default class MainPage extends Component {
     return (
       <>
         <Header links={linksData} src={mainBg} heading={headingText} descr={descrText} button="More"/>
-        <Article text={articleText}/>
+        <Article heading={articleHeading} text={articleText}/>
         <OurBest cards={mainCardsData}/>
         <Footer links={linksData}/>
       </>

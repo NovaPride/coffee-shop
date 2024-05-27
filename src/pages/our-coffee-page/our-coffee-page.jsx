@@ -25,6 +25,9 @@ export default class OurCoffee extends Component {
       met spot shy want. Children me laughing we prospect answered followed. At it went <br/>
       is song that held help face.
     </>;
+    const articleHeading = <>
+      About our beans
+    </>;
     const headingText = <>
       Our Coffee
     </>;
@@ -32,7 +35,7 @@ export default class OurCoffee extends Component {
     return (
       <>
         <Header links={linksData} src={ourCoffeeBg} heading={headingText}/>
-        <Article text={articleText} src={aboutImg} alt={altText}/>
+        <Article heading={articleHeading} text={articleText} src={aboutImg} alt={altText}/>
         <Separator/>
         <ProductCardsFilter/>
         <ProductCards cards={ourCoffeeCardsData} shadow={true}/>
