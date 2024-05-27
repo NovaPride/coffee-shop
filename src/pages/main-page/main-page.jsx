@@ -9,7 +9,6 @@ import { mainBg } from "../../resources/imgFiles";
 
 export default class MainPage extends Component {
   render() {
-    const linksData = this.props.links;
     const mainCardsData = this.props.cards;
 
     const headingText = <>
@@ -38,10 +37,10 @@ export default class MainPage extends Component {
 
     return (
       <>
-        <Header links={linksData} src={mainBg} heading={headingText} descr={descrText} button="More"/>
+        <Header src={mainBg} heading={headingText} descr={descrText} button="More"/>
         <Article heading={articleHeading} text={articleText}/>
         <OurBest cards={mainCardsData}/>
-        <Footer links={linksData}/>
+        <Footer/>
       </>
     );
   }

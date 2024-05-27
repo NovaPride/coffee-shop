@@ -1,4 +1,5 @@
 import { Component } from "react"
+import { linksData } from "../../resources/data/data";
 
 import "./navbar.scss";
 
@@ -11,7 +12,6 @@ export default class Navbar extends Component {
   
   render() {
     const location = this.props.location;
-    const linksData = this.props.links;
     return (
       <nav className={"nav" + (location === "top" ? " nav_top" : " nav_bottom")}>
         <ul className="nav_links">

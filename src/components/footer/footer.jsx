@@ -13,12 +13,11 @@ export default class Footer extends Component {
   }
 
   render() {
-    const linksData = this.props.links;
     return (
       <footer className="footer">
         <div className="container">
           <div className="footer_wrapper">
-            <Navbar location="bottom" links={linksData}/>
+            <Navbar location="bottom"/>
             <BeanSepator theme="black"/>
           </div>
         </div>

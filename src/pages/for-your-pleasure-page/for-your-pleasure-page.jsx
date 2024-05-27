@@ -11,7 +11,6 @@ import { hotCoffee, forPleasureBg } from "../../resources/imgFiles";
 
 export default class ForYourPleasure extends Component {
   render() {
-    const linksData = this.props.links;
     const ourCoffeeCardsData = this.props.cards;
 
     const altText = "women drinks coffee";
@@ -33,11 +32,11 @@ export default class ForYourPleasure extends Component {
 
     return (
       <>
-        <Header links={linksData} src={forPleasureBg} heading={headingText}/>
+        <Header src={forPleasureBg} heading={headingText}/>
         <Article heading={articleHeading} text={articleText} src={hotCoffee} alt={altText}/>
         <Separator/> <br/><br/><br/>
         <ProductCards cards={ourCoffeeCardsData} shadow={true}/>
-        <Footer links={linksData}/>
+        <Footer/>
       </>
     );
   }

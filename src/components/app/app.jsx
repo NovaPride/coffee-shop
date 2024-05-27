@@ -8,7 +8,7 @@ import CoffeeDetails from "../../pages/coffee-details-page/coffee-details-page";
 import ForYourPleasure from "../../pages/for-your-pleasure-page/for-your-pleasure-page";
 
 
-import { linksData, mainCardsData, ourCoffeeCardsData } from "../../resources/data/data";
+import { mainCardsData, ourCoffeeCardsData } from "../../resources/data/data";
 
 
 export default class App extends Component {
@@ -22,10 +22,10 @@ export default class App extends Component {
   render() {
     const route = this.state.route;
     return (<>{{
-      "main" : <MainPage links={linksData} cards={mainCardsData}/>,
-      "ourcoffee" : <OurCoffee links={linksData} cards={ourCoffeeCardsData}/>,
-      "coffeedetails" : <CoffeeDetails links={linksData}/>,
-      "foryourpleasure" : <ForYourPleasure links={linksData} cards={ourCoffeeCardsData}/>,
+      "main" : <MainPage cards={mainCardsData}/>,
+      "ourcoffee" : <OurCoffee cards={ourCoffeeCardsData}/>,
+      "coffeedetails" : <CoffeeDetails/>,
+      "foryourpleasure" : <ForYourPleasure cards={ourCoffeeCardsData}/>,
     }[route]
 
     }</>);

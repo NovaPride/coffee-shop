@@ -13,7 +13,6 @@ export default class Header extends Component {
   }
   
   render() {
-    const linksData = this.props.links;
     const bgSrc = this.props.src;
     const heading = this.props.heading;
     const descr = this.props.descr;
@@ -29,7 +28,7 @@ export default class Header extends Component {
     return (
       <header className="header" style={headerStyle}>
         <div className="container">
-          <Navbar location="top" links={linksData}/>
+          <Navbar location="top"/>
           <div className="header_info">
             <h1 className="header_info_heading">{heading}</h1>
             {descr ? 

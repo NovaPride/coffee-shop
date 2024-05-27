@@ -12,7 +12,6 @@ import { aboutImg, ourCoffeeBg } from "../../resources/imgFiles";
 
 export default class OurCoffee extends Component {
   render() {
-    const linksData = this.props.links;
     const ourCoffeeCardsData = this.props.cards;
 
     const headingText = <>
@@ -34,12 +33,12 @@ export default class OurCoffee extends Component {
 
     return (
       <>
-        <Header links={linksData} src={ourCoffeeBg} heading={headingText}/>
+        <Header src={ourCoffeeBg} heading={headingText}/>
         <Article heading={articleHeading} text={articleText} src={aboutImg} alt={altText}/>
         <Separator/>
         <ProductCardsFilter/>
         <ProductCards cards={ourCoffeeCardsData} shadow={true}/>
-        <Footer links={linksData}/>
+        <Footer/>
       </>
     );
   }

@@ -9,8 +9,6 @@ import { ourCoffeeBg, coffeeDetails } from "../../resources/imgFiles";
 
 export default class CoffeeDetails extends Component {
   render() {
-    const linksData = this.props.links;
-
     const headingText = <>
       Our Coffee
     </>;
@@ -32,9 +30,9 @@ export default class CoffeeDetails extends Component {
 
     return (
       <>
-        <Header links={linksData} src={ourCoffeeBg} heading={headingText}/>
+        <Header src={ourCoffeeBg} heading={headingText}/>
         <Article heading={articleHeading} text={articleText} textWidth={"450px"} src={coffeeDetails} alt={altText}/>
-        <Footer links={linksData}/>
+        <Footer/>
       </>
     );
   }
