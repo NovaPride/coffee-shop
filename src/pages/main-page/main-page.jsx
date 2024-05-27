@@ -12,6 +12,16 @@ export default class MainPage extends Component {
     const linksData = this.props.links;
     const mainCardsData = this.props.cards;
 
+    const headingText = <>
+      Everything You Love About Coffee
+    </>;
+    const descrText = <>
+      We makes every day full of energy and taste <br/>
+      Want to try our beans?
+    </>;
+    const articleHeading = <>
+      About Us
+    </>;
     const articleText = <>
       Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
       Afraid at highly months do things on at. Situation recommend objection do intention
@@ -24,16 +34,6 @@ export default class MainPage extends Component {
       horrible but confined day end marriage. Eagerness furniture set preserved far
       recommend. Did even but nor are most gave hope. Secure active living depend son
       repair day ladies now.
-    </>;
-    const articleHeading = <>
-      About Us
-    </>;
-    const headingText = <>
-      Everything You Love About Coffee
-    </>;
-    const descrText = <>
-      We makes every day full of energy and taste <br/>
-      Want to try our beans?
     </>;
 
     return (

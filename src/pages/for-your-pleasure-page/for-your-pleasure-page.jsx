@@ -3,24 +3,18 @@ import { Component } from "react";
 import Header from "../../components/header/header";
 import Article from "../../components/article/article";
 import Separator from "../../components/separator/separator";
-import ProductCardsFilter from "../../components/product-cards-filter/product-cards-filter";
 import ProductCards from "../../components/product-cards/product-cards";
 import Footer from "../../components/footer/footer";
 
-import { aboutImg, ourCoffeeBg } from "../../resources/imgFiles";
+import { hotCoffee, forPleasureBg } from "../../resources/imgFiles";
 
 
-export default class OurCoffee extends Component {
+export default class ForYourPleasure extends Component {
   render() {
     const linksData = this.props.links;
     const ourCoffeeCardsData = this.props.cards;
 
-    const headingText = <>
-      Our Coffee
-    </>;
-    const articleHeading = <>
-      About our beans
-    </>;
+    const altText = "women drinks coffee";
     const articleText = <>
       Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
       <br/><br/>
@@ -30,14 +24,18 @@ export default class OurCoffee extends Component {
       met spot shy want. Children me laughing we prospect answered followed. At it went <br/>
       is song that held help face.
     </>;
-    const altText = "women drinks coffee";
+    const articleHeading = <>
+      About our goods
+    </>;
+    const headingText = <>
+      Our Coffee
+    </>;
 
     return (
       <>
-        <Header links={linksData} src={ourCoffeeBg} heading={headingText}/>
-        <Article heading={articleHeading} text={articleText} src={aboutImg} alt={altText}/>
-        <Separator/>
-        <ProductCardsFilter/>
+        <Header links={linksData} src={forPleasureBg} heading={headingText}/>
+        <Article heading={articleHeading} text={articleText} src={hotCoffee} alt={altText}/>
+        <Separator/> <br/><br/><br/>
         <ProductCards cards={ourCoffeeCardsData} shadow={true}/>
         <Footer links={linksData}/>
       </>

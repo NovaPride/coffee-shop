@@ -11,7 +11,12 @@ export default class CoffeeDetails extends Component {
   render() {
     const linksData = this.props.links;
 
-    const altText = "coffee ad with beautiful sunshine";
+    const headingText = <>
+      Our Coffee
+    </>;
+    const articleHeading = <>
+      About It
+    </>;
     const articleText = <>
       <b>Country: </b>Brasil<br/>
       <br/>
@@ -23,12 +28,7 @@ export default class CoffeeDetails extends Component {
       <br/>
       <b>Price: </b><span>16.99$</span>
     </>;
-    const articleHeading = <>
-      About It
-    </>;
-    const headingText = <>
-      Our Coffee
-    </>;
+    const altText = "coffee ad with beautiful sunshine";
 
     return (
       <>
