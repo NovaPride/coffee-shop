@@ -5,6 +5,7 @@ import Article from "../../components/article/article";
 import OurBest from "../../components/our-best-main/our-best-main";
 import Footer from "../../components/footer/footer";
 
+import { mainBg } from "../../resources/imgFiles";
 
 export default class MainPage extends Component {
   render() {
@@ -24,10 +25,17 @@ export default class MainPage extends Component {
       recommend. Did even but nor are most gave hope. Secure active living depend son
       repair day ladies now.
     </>;
+    const headingText = <>
+      Everything You Love About Coffee
+    </>;
+    const descrText = <>
+      We makes every day full of energy and taste <br/>
+      Want to try our beans?
+    </>;
 
     return (
       <>
-        <Header links={linksData}/>
+        <Header links={linksData} src={mainBg} heading={headingText} descr={descrText} button="More"/>
         <Article text={articleText}/>
         <OurBest cards={mainCardsData}/>
         <Footer links={linksData}/>

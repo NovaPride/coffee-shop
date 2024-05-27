@@ -9,16 +9,19 @@ import { linksData, mainCardsData, ourCoffeeCardsData } from "../../resources/da
 
 
 export default class App extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {}
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      route: "ourcoffee"
+    }
+  }
 
   render() {
+    const route = this.state.route;
     return (<>{{
       "main" : <MainPage links={linksData} cards={mainCardsData}/>,
       "ourcoffee" : <OurCoffee links={linksData} cards={ourCoffeeCardsData}/>,
-      }["main"]
+    }[route]
       
     }</>);
   }

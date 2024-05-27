@@ -1,7 +1,7 @@
 .header{
   background: url(../../resources/img/main-bg.webp) center (center/cover) no-repeat;
   padding-top: 20px;
-  height: 640px;
+  min-height: 260px;
   filter: grayscale(0.35);
   color: #fff;
 
@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 60px;
 
     &_heading{
       font-size: 40px;
@@ -33,6 +33,7 @@
     }
     
     &_btn{
+      margin-bottom: 200px;
       height: 30px;
       width: 120px;
       font-size: 14px;

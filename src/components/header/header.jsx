@@ -14,18 +14,37 @@ export default class Header extends Component {
   
   render() {
     const linksData = this.props.links;
+    const bgSrc = this.props.src;
+    const heading = this.props.heading;
+    const descr = this.props.descr;
+    const button = this.props.button;
+
+    const headerStyle = {
+      backgroundImage: `url(${bgSrc})`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat'
+    }
+
     return (
-      <header className="header">
+      <header className="header" style={headerStyle}>
         <div className="container">
           <Navbar location="top" links={linksData}/>
           <div className="header_info">
-            <h1 className="header_info_heading">Everything You Love About Coffee</h1>
-            <BeanSepator theme="white"/>
-            <p className="header_info_descr">
-              We makes every day full of energy and taste <br/>
-              Want to try our beans?
-            </p>
-            <button className="header_info_btn">More</button>
+            <h1 className="header_info_heading">{heading}</h1>
+            {descr ? 
+              <>
+                <BeanSepator theme="white"/>
+                <p className="header_info_descr">
+                  {descr}
+                </p>
+              </> : <></>
+            }
+            {button ? <>
+              <button className="header_info_btn">{button}</button>
+            </> : <></>
+            }
+            
           </div>
         </div>
       </header>

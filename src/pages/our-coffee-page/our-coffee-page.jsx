@@ -7,7 +7,7 @@ import ProductCardsFilter from "../../components/product-cards-filter/product-ca
 import ProductCards from "../../components/product-cards/product-cards";
 import Footer from "../../components/footer/footer";
 
-import { aboutImg } from "../../resources/imgFiles";
+import { aboutImg, ourCoffeeBg } from "../../resources/imgFiles";
 
 
 export default class OurCoffee extends Component {
@@ -25,10 +25,13 @@ export default class OurCoffee extends Component {
       met spot shy want. Children me laughing we prospect answered followed. At it went <br/>
       is song that held help face.
     </>;
+    const headingText = <>
+      Our Coffee
+    </>;
 
     return (
       <>
-        <Header links={linksData}/>
+        <Header links={linksData} src={ourCoffeeBg} heading={headingText}/>
         <Article text={articleText} src={aboutImg} alt={altText}/>
         <Separator/>
         <ProductCardsFilter/>
