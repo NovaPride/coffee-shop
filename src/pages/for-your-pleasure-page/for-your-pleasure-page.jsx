@@ -27,7 +27,7 @@ export default class ForYourPleasure extends Component {
       About our goods
     </>;
     const headingText = <>
-      Our Coffee
+      For your pleasure
     </>;
 
     return (

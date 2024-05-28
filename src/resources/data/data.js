@@ -17,9 +17,9 @@ export const bestCardsData = [
 
 export const cardsData = [
   {id: 1, text: "AROMISTICO Coffee 1 kg", price: 6.99, country: "Brazil",   imgSrc: coffee1Img},
-  {id: 2, text: "AROMISTICO Coffee 1 kg", price: 6.99, country: "Kenya",    imgSrc: coffee1Img},
-  {id: 3, text: "AROMISTICO Coffee 1 kg", price: 6.99, country: "Columbia", imgSrc: coffee1Img},
+  {id: 2, text: "Presto Coffee Beans 1 kg", price: 6.99, country: "Kenya",    imgSrc: coffee2Img},
+  {id: 3, text: "Solimo Coffee Beans 2 kg", price: 6.99, country: "Columbia", imgSrc: coffee3Img},
   {id: 4, text: "AROMISTICO Coffee 1 kg", price: 6.99, country: "Brazil",   imgSrc: coffee1Img},
-  {id: 5, text: "AROMISTICO Coffee 1 kg", price: 6.99, country: "Brazil",   imgSrc: coffee1Img},
-  {id: 6, text: "AROMISTICO Coffee 1 kg", price: 6.99, country: "Brazil",   imgSrc: coffee1Img},
+  {id: 5, text: "Solimo Coffee Beans 1 kg", price: 6.99, country: "Brazil",   imgSrc: coffee3Img},
+  {id: 6, text: "AROMISTICO Coffee 1 kg", price: 6.99, country: "Brazil",   imgSrc: coffee2Img},
 ]
