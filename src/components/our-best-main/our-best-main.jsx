@@ -13,13 +13,13 @@ export default class OurBest extends Component {
   }
 
   render() {
-    const mainCardsData = this.props.cards;
+    const сardsData = this.props.cards;
     return (
       <section className="our-best">
         <div className="container">
           <div className="our-best_wrapper">
             <h2 className="our-best_wrapper_heading">Our best</h2>
-              <ProductCards cards={mainCardsData}/>
+              <ProductCards cards={сardsData}/>
           </div>
         </div>
       </section>
