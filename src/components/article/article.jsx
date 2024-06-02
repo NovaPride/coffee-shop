@@ -6,11 +6,6 @@ import BeanSepator from "../bean-separator/bean-separator";
 
 
 export default class Article extends Component {
-  // constructor(props) {
-  //   super(props)
-  // }
-  
-
   render() {
     const imgSrc = this.props.src;
     const imgAlt = this.props.alt;
@@ -41,6 +36,6 @@ export default class Article extends Component {
           </>}
         </div>
       </article>
-    );
+    )
   }
 }

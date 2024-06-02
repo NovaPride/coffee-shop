@@ -7,11 +7,6 @@ import BeanSepator from "../bean-separator/bean-separator";
 
 
 export default class Footer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-  }
-
   render() {
     return (
       <footer className="footer">
@@ -22,6 +17,6 @@ export default class Footer extends Component {
           </div>
         </div>
       </footer>
-    );
+    )
   }
 }

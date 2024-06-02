@@ -34,7 +34,7 @@ export default class CoffeeDetails extends Component {
         <Article heading={articleHeading} text={articleText} textWidth={"450px"} src={coffeeDetails} alt={altText}/>
         <Footer/>
       </>
-    );
+    )
   }
 }
 

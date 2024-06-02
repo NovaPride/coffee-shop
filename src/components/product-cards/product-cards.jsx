@@ -4,12 +4,6 @@ import "./product-cards.scss"
 
 
 export default class ProductCards extends Component{
-  constructor(props) {
-    super(props);
-   
-    this.state = {}
-  }
-
   render() {
     const cardsData = this.props.cards;
     const isShadow = this.props.shadow;
@@ -29,10 +23,10 @@ export default class ProductCards extends Component{
                   <p className="product-cards_grid_elem_price">{price + "$"}</p>
                 </div>         
               </div>
-            );
+            )
           })
         }
       </div> 
-    );
+    )
   }
 }

@@ -42,6 +42,6 @@ export default class MainPage extends Component {
         <OurBest cards={сardsData}/>
         <Footer/>
       </>
-    );
+    )
   }
 }

@@ -6,12 +6,6 @@ import ProductCards from "../product-cards/product-cards";
 
 
 export default class OurBest extends Component {
-  constructor(props) {
-    super(props);
-   
-    this.state = {}
-  }
-
   render() {
     const сardsData = this.props.cards;
     return (
@@ -23,6 +17,6 @@ export default class OurBest extends Component {
           </div>
         </div>
       </section>
-    );
+    )
   }
 } 

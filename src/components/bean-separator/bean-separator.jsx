@@ -8,5 +8,5 @@ export default function BeanSepator({theme}) {
     <div className={"bean-separator bean-separator_" + theme}>
       <img src={theme === "black" ? bean_black : bean_white} alt="bean sepator" />
     </div>
-  );
+  )
 }

@@ -68,7 +68,7 @@ export default class OurCoffee extends Component {
         <ProductCards cards={сardsData} shadow={true}/>
         <Footer/>
       </>
-    );
+    )
   }
 }
 

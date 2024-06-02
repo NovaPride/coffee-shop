@@ -46,6 +46,6 @@ export default class ProductCardsFilter extends Component{
           <button className="product-cards-filter_elem_button" onClick={this.onUpdateCountry} data-country="columbia">Columbia</button>
         </div> 
       </div> 
-    );
+    )
   }
 }
