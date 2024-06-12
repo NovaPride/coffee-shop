@@ -1,15 +1,10 @@
-import { Component } from "react";
+const Page404 = () => {
+  return (
+    <>
+      <div>This page doesnt exist</div>
+      <a href="/">Go back</a>
+    </>
+  );
+};
 
-
-export default class Page404 extends Component {
-  render() {
-    
-    return (
-      <>
-        <div>This page doesnt exist</div>
-        <a href="/">Go back</a>
-      </>
-    )
-  }
-}
-
+export default Page404;

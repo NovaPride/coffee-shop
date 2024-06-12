@@ -1,51 +1,67 @@
-import { Component } from "react";
+import { useState } from "react";
 
-import "./product-cards-filter.scss"
+import "./product-cards-filter.scss";
 
+const ProductCardsFilter = (props) => {
+  const [promt, setPromt] = useState("");
+  const [country, setCountry] = useState("");
 
-export default class ProductCardsFilter extends Component{
-  constructor(props) {
-    super(props);
-   
-    this.state = {
-      promt : "",
-      country : "",
-    }
-  }
+  const onUpdateSearch = (e) => {
+    const newPromt = e.target.value;
+    setPromt(newPromt);
+    props.setPromt(newPromt);
+  };
 
-  onUpdateSearch = e => {
-    const promt = e.target.value;
-    this.setState({promt});
-    this.props.setPromt(promt);
-  }
-
-  onUpdateCountry = e => {
-    const country = e.target.dataset.country;
-    e.target.parentElement.childNodes.forEach(node => node.classList.remove("product-cards-filter_elem_button_active"))
-    if(country === this.state.country) {
-      this.setState(({country}) => {return{country: ""}});
-      this.props.setCountry("");
+  const onUpdateCountry = (e) => {
+    const newCountry = e.target.dataset.country;
+    e.target.parentElement.childNodes.forEach((node) =>
+      node.classList.remove("product-cards-filter_elem_button_active")
+    );
+    if (newCountry === country) {
+      setCountry("");
+      props.setCountry("");
     } else {
-      e.target.classList.add("product-cards-filter_elem_button_active")
-      this.setState({country});
-      this.props.setCountry(country);
+      e.target.classList.add("product-cards-filter_elem_button_active");
+      setCountry(newCountry);
+      props.setCountry(newCountry);
     }
-  }
+  };
 
-  render() {
-    return (
-      <div className="product-cards-filter">
-        <div className="product-cards-filter_elem">
-          <p className="product-cards-filter_elem_label">Looking for</p>
-          <input className="product-cards-filter_elem_search" type="text" placeholder="start typing here" value={this.state.promt} onChange={this.onUpdateSearch}/>
-        </div> 
-        <div className="product-cards-filter_elem">
-          <p className="product-cards-filter_elem_label">Or filter</p>
-          <button className="product-cards-filter_elem_button" onClick={this.onUpdateCountry} data-country="brazil">Brazil</button>
-          <button className="product-cards-filter_elem_button" onClick={this.onUpdateCountry} data-country="kenya">Kenya</button>
-          <button className="product-cards-filter_elem_button" onClick={this.onUpdateCountry} data-country="columbia">Columbia</button>
-        </div> 
-      </div> 
-    )
-  }
-}
+  return (
+    <div className="product-cards-filter">
+      <div className="product-cards-filter_elem">
+        <p className="product-cards-filter_elem_label">Looking for</p>
+        <input
+          className="product-cards-filter_elem_search"
+          type="text"
+          placeholder="start typing here"
+          value={promt}
+          onChange={onUpdateSearch}
+        />
+      </div>
+      <div className="product-cards-filter_elem">
+        <p className="product-cards-filter_elem_label">Or filter</p>
+        <button
+          className="product-cards-filter_elem_button"
+          onClick={onUpdateCountry}
+          data-country="brazil">
+          Brazil
+        </button>
+        <button
+          className="product-cards-filter_elem_button"
+          onClick={onUpdateCountry}
+          data-country="kenya">
+          Kenya
+        </button>
+        <button
+          className="product-cards-filter_elem_button"
+          onClick={onUpdateCountry}
+          data-country="columbia">
+          Columbia
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default ProductCardsFilter;
