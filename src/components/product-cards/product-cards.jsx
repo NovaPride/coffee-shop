@@ -9,13 +9,12 @@ const ProductCards = ({ cards, shadow }) => {
     <div className="product-cards_grid">
       {cards.map(({ id, text, price, country, imgSrc }) => {
         return (
-          <div
+          <a
+            href="/coffeedetails"
             className={gridElemStyle}
             tabIndex="0"
             key={id}
-            onClick={() => {
-              console.log("Clicked!!");
-            }}>
+            >
             <div className="product-cards_grid_elem_wrapper">
               <img
                 className="product-cards_grid_elem_img"
@@ -30,7 +29,7 @@ const ProductCards = ({ cards, shadow }) => {
               )}
               <p className="product-cards_grid_elem_price">{price + "$"}</p>
             </div>
-          </div>
+          </a>
         );
       })}
     </div>

@@ -6,7 +6,6 @@ export const linksData = [
   {id: 1, text: "Coffee house",      link: "/"},
   {id: 2, text: "Our coffee",        link: "/ourcoffee"},
   {id: 3, text: "For your pleasure", link: "/foryourpleasure"},
-  {id: 4, text: "TEST",              link: "/coffeedetails"},
 ]
 
 export const bestCardsData = [
