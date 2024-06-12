@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import Header from "../../components/header/header";
 import Article from "../../components/article/article";
 import Separator from "../../components/separator/separator";
@@ -6,7 +8,7 @@ import Footer from "../../components/footer/footer";
 
 import { hotCoffee, forPleasureBg } from "../../resources/imgFiles";
 
-const ForYourPleasure = ({cards}) => {
+const ForYourPleasure = ({ cards }) => {
   const altText = "women drinks coffee";
   const articleText = (
     <>
@@ -29,6 +31,13 @@ const ForYourPleasure = ({cards}) => {
 
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible."
+        />
+        <title>For your pleasure</title>
+      </Helmet>
       <Header src={forPleasureBg} heading={headingText} />
       <Article
         heading={articleHeading}

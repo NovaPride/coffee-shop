@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import Header from "../../components/header/header";
 import Article from "../../components/article/article";
 import Footer from "../../components/footer/footer";
@@ -31,6 +33,10 @@ const CoffeeDetails = () => {
 
   return (
     <>
+      <Helmet>
+        <meta name="description" content="Information about {coffee name}" />
+        <title>"coffee name"</title>
+      </Helmet>
       <Header src={ourCoffeeBg} heading={headingText} />
       <Article
         heading={articleHeading}

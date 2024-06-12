@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import Header from "../../components/header/header";
 import Article from "../../components/article/article";
 import OurBest from "../../components/our-best-main/our-best-main";
@@ -33,6 +35,13 @@ const MainPage = ({ cards }) => {
 
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible."
+        />
+        <title>Coffee house</title>
+      </Helmet>
       <Header
         src={mainBg}
         heading={headingText}
