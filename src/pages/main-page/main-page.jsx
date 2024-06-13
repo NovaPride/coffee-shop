@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 
 import Header from "../../components/header/header";
 import Article from "../../components/article/article";
-import OurBest from "../../components/our-best-main/our-best-main";
+import OurBest from "../../components/our-best/our-best";
 import Footer from "../../components/footer/footer";
 
 import { mainBg } from "../../resources/imgFiles";

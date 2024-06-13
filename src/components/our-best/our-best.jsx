@@ -1,4 +1,4 @@
-import "./our-best-main.scss";
+import "./our-best.scss";
 
 import ProductCards from "../product-cards/product-cards";
 
@@ -8,7 +8,7 @@ const OurBest = ({ cards }) => {
       <div className="container">
         <div className="our-best_wrapper">
           <h2 className="our-best_wrapper_heading">Our best</h2>
-          <ProductCards cards={cards} />
+          <ProductCards cards={cards} onlyBest={true}/>
         </div>
       </div>
     </section>
